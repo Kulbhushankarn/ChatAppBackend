@@ -281,7 +281,7 @@ app.use('/api/groups', require('./routes/groups'));
 app.use('/api/notifications', require('./routes/notifications'));
 app.use(configureCompression());
 
-const PORT = process.env.PORT || 5000;
+//const PORT = process.env.PORT || 5000;
 const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
 
 server.listen(apiBaseUrl, () => {
