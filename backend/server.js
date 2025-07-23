@@ -282,8 +282,8 @@ app.use('/api/notifications', require('./routes/notifications'));
 app.use(configureCompression());
 
 //const PORT = process.env.PORT || 5000;
-const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
+const PORT = process.env.PORT || 5000;
 
-server.listen(apiBaseUrl, () => {
-  console.log(`Server running on port ${apiBaseUrl}`);
+server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
